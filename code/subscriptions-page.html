@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../code/css/mytube-defaults.css">
+  <link rel="stylesheet" href="../code/css/mytubeHome.css">
+  <link rel="stylesheet" href="../code/css/mytube-responsive.css">
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0d6f8c4c80.js" crossorigin="anonymous"></script>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../assets/youtube (1).png">
+  <title>Subscriptions - MyTube</title>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+
+    <div class="nav-wrapper">
+      <div class="nav-left">
+        <div class="toggle_btn">
+          <!-- <i class="fa-solid fa-bars" style="padding: 8px; color: var(--yt-black);"></i> -->
+          <img class="menu-bars" src="../assets/hamburger.png" style="height: 19px;" alt="">
+        </div>
+        <a href="mytubeHome.html">
+          <img title="MyTube Home" src="../assets/mytube design.png" alt="mytube" style="padding: 0 14px 0 16px;">
+        </a>
+      </div>
+
+      <div class="nav-middle">
+        <div class="search-bar">
+          <label for="search" style="display: none;"></label>
+          <input type="text" placeholder="Search" autocomplete="on" name="search-bar" id="search">
+          <img src="../assets/magnifying-glass.png" style="height: 22px;" title="Search" alt="magnifying glass">
+        </div>
+        <i title="Search with your voice" class="fa-solid fa-microphone"></i>
+      </div>
+
+      <div class="nav-right">
+        <!-- <i title="Login" class="fa-solid fa-film fa-lg" style="color: var(--yt-black);"></i> -->
+
+        <div class="nav-right-icon">
+          <a href="./mytubeNewVideo.html"><img src="../assets/add-video.png" alt="" style="height: 24px;" title="Create"></a>
+        </div>
+        <div class="nav-right-icon">
+          <img src="../assets/bell.png" alt="" style="height: 24px;" title="Notifications">
+        </div>
+        <div class="nav-right-icon">
+          <img src="../assets/zion-profile-pic.jpg" class="toggle_btn" alt="">
+        </div>
+      </div>
+
+      <!-- <div class="search-bar2">
+        <label for="search" style="display: none;"></label>
+        <input type="text" placeholder="Search" autocomplete="on" name="search-bar" id="search">
+        <img src="../assets/magnifying-glass.png" style="height: 22px;" title="Search" alt="magnifying glass">
+      </div> -->
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-icon" title="Home">
+        <a href=""><img src="../assets/home (2).png" alt="" style="height: 19px;"></a>
+        <p>Home</p>
+      </div>
+      <div class="sidebar-icon" title="Shorts">
+        <a href=""><img src="../assets/multimedia.png" alt="" style="height: 21px;"></a>
+        <p>Shorts</p>
+      </div>
+      <div class="sidebar-icon" title="Subscriptions">
+        <a href=""><img src="../assets/playlist (1).png" alt="" style="height: 19px; width: 22px;"></a>
+        <p>Subscriptions</p>
+      </div>
+      <div class="sidebar-icon" title="You">
+        <a href=""><img src="../assets/video-library.png" alt="" style="height: 22px;"></a>
+        <p>You</p>
+      </div>
+    </div>
+
+    <!-- DROPDOWN MENU -->
+    <div class="dropdown_menu open">
+    <div class="dropdown-bg"></div>
+    <div class="dropdown-section">
+
+        <!-- TOP -->
+        <div>
+          <li>
+            <img src="../assets/home (2).png" style="height: 19px; margin-right: 2px;" alt="">
+            <a href="./mytubeHome.html" title="Home">Home</a>
+          </li>
+          <li>
+            <img src="../assets/multimedia.png" style="height: 21px; margin-right: 1px;" alt="">
+            <a href="" title="Shorts">Shorts</a>
+          </li>
+          <li>
+            <img src="../assets/playlist (1).png" style="height: 19px; width: 22px;" alt="">
+            <a href="" title="Subscriptions">Subscriptions</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- YOU -->
+        <div class="dropdown-header">
+          <h2>You</h2>
+          <img src="../assets/chevron.png" style="width: 16px;" alt="">
+        </div>
+        <div>
+          <li>
+            <img src="../assets/television.png" style="height: 22px;" alt="">
+            <a href="./mytubeHome.html">Your channel</a>
+          </li>
+          <li>
+            <img src="../assets/history.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection1.html">History</a>
+          </li>
+          <li>
+            <img src="../assets/play-list.png" style="height: 22px;" alt="">
+            <a href="./playlist-page.html">Playlists</a>
+          </li>
+          <li>
+            <img src="../assets/play.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Your videos</a>
+          </li>
+          <li>
+            <img src="../assets/clock.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Watch later</a>
+          </li>
+          <li>
+            <img src="../assets/like (1).png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Liked videos</a>
+          </li>
+        </div>
+      
+        <hr>
+        
+        <!-- SUBSCRIPTIONS -->
+        <h2 class="dropdown-header-2">Subscriptions</h2>
+        <div>
+          <li>
+            <img src="../assets/free-code-camp.png" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@freecodecamp" target="_blank">freeCodeCamp.org</a>
+            <img class="push-right" src="../assets/live (1).png" style="width: 14px;" alt="">
+          </li>
+          <li>
+            <img src="../assets/full-time-filmmaker-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@fulltimefilmmaker" target="_blank">Full Time Filmmaker</a>
+            <img class="push-right" src="../assets/live (1).png" style="width: 14px;" alt="">
+          </li>
+          <li>
+            <img src="../assets/cascadeur-logo.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@Cascadeur" target="_blank">Cascadeur</a>
+            <img class="push-right" src="../assets/live (1).png" style="width: 14px;" alt="">
+          </li>
+          <li>
+            <img src="../assets/george-janko-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@GeorgeJanko" target="_blank">George Janko</a>
+            <div class="live-dot"></div>
+          </li>
+          <li>
+            <img src="../assets/scotty-kilmer-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@scottykilmer" target="_blank">Scotty Kilmer</a>
+            <div class="live-dot"></div>
+          </li>
+          <li>
+            <img src="../assets/reallusion-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@reallusion" target="_blank">Reallusion</a>
+            <div class="live-dot"></div>
+          </li>
+          <li>
+            <img src="../assets/harris-highlights.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@HarrisHighlights" target="_blank">Harris Highlights</a>
+            <div class="live-dot"></div>
+          </li>
+        </div>
+        
+        <hr>
+
+        <!-- EXPLORE -->
+        <h2 class="dropdown-header-2">Explore</h2>
+        <div>
+          <li>
+            <img src="../assets/danger.png" style="height: 22px;" alt="">
+            <a href="">Trending</a>
+          </li>
+          <li>
+            <img src="../assets/bag.png" style="height: 22px;" alt="">
+            <a href="">Shopping</a>
+          </li>
+          <li>
+            <img src="../assets/music.png" style="height: 22px;" alt="">
+            <a href="">Music</a>
+          </li>
+          <li>
+            <img src="../assets/cinema.png" style="height: 22px;" alt="">
+            <a href="">Movies & TV</a>
+          </li>
+          <li>
+            <img src="../assets/live.png" style="height: 22px;" alt="">
+            <a href="">Live</a>
+          </li>
+          <li>
+            <img src="../assets/joystick.png" style="height: 22px;" alt="">
+            <a href="">Gaming</a>
+          </li>
+          <li>
+            <img src="../assets/newspaper.png" style="height: 22px;" alt="">
+            <a href="">News</a>
+          </li>
+          <li>
+            <img src="../assets/trophy.png" style="height: 22px;" alt="">
+            <a href="">Sports</a>
+          </li>
+          <li>
+            <img src="../assets/light-bulb.png" style="height: 22px;" alt="">
+            <a href="">Courses</a>
+          </li>
+          <li>
+            <img src="../assets/scarf.png" style="height: 22px;" alt="">
+            <a href="">Fashion & Beauty</a>
+          </li>
+          <li>
+            <img src="../assets/signal.png" style="height: 22px;" alt="">
+            <a href="">Podcasts</a>
+          </li>
+          <li>
+            <img src="../assets/handheld-console.png" style="height: 25px;" alt="">
+            <a href="">Playables</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- MORE FROM MYTUBE -->
+        <h2 class="dropdown-header-2">More from MyTube</h2>
+        <div>
+          <li>
+            <img src="../assets/youtube (1).png" style="height: 22px;" alt="">
+            <a href="">MyTube Premium</a>
+          </li>
+          <li>
+            <img src="../assets/social.png" style="height: 22px;" alt="">
+            <a href="">MyTube Studio</a>
+          </li>
+          <li>
+            <img src="../assets/youtube (2).png" style="height: 22px;" alt="">
+            <a href="">MyTube TV</a>
+          </li>
+          <li>
+            <img src="../assets/music (1).png" style="height: 22px;" alt="">
+            <a href="">MyTube Music</a>
+          </li>
+          <li>
+            <img src="../assets/youtube-kids.png" style="height: 22px;" alt="">
+            <a href="">MyTube Kids</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- SETTINGS -->
+        <div>
+          <li>
+            <img src="../assets/setting.png" style="height: 22px;" alt="">
+            <a href="./mytubeHome.html">Settings</a>
+          </li>
+          <li>
+            <img src="../assets/flag.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection1.html">Report History</a>
+          </li>
+          <li>
+            <img src="../assets/question.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Help</a>
+          </li>
+          <li>
+            <img src="../assets/chat-bubble.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Send feedback</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- FOOTER -->
+        <footer>
+          <div class="dropdown-footer-top">
+            <a target="_blank" href="https://about.youtube/" style="margin-right: 7px;">About</a>
+            <a target="_blank" href="https://blog.youtube/" style="margin-right: 7px;">Press</a>
+            <a target="_blank" href="https://www.youtube.com/howyoutubeworks/policies/copyright/" style="margin-right: 7px;">Copyright</a>
+            <a target="_blank" href="https://www.youtube.com/t/contact_us/" style="margin-right: 7px;">Contact us</a>
+            <a target="_blank" href="https://www.youtube.com/creators/" style="margin-right: 5px;">Creators</a>
+            <a target="_blank" href="https://www.youtube.com/ads/" style="margin-right: 7px;">Advertise</a>
+            <a target="_blank" href="https://developers.google.com/youtube" style="margin-right: 7px;">Developers</a>
+          </div>
+          <div class="dropdown-footer-top">
+            <a target="_blank" href="https://www.youtube.com/t/terms">Terms</a>
+            <a target="_blank" href="https://policies.google.com/privacy?hl=en">Privacy</a>
+            <a target="_blank" href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/">Policy & Safety</a>
+            <a target="_blank" href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen">How MyTube works</a>
+            <a target="_blank" href="https://www.youtube.com/new">Test new features</a>
+            <a target="_blank" href="https://tv.youtube.com/learn/nflsundayticket/">NFL Sunday Ticket</a>
+          </div>
+          <div class="dropdown-footer-bottom">
+            <p>© 2024 Google LLC</p>
+          </div>
+        </footer>
+    
+    </div>
+
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- HORIZONTAL VIDEO -->
+    <h2 class="playlist-header" style="margin: 50px 0 20px 10px;">Latest</h2>
+    <table>
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/JgTDd_fgV0A?si=XmuPiTkc7W6Mvmnz"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/harris-highlights.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/JgTDd_fgV0A?si=XmuPiTkc7W6Mvmnz">
+                    <h3 class="iframes-header-middle-h3" title="HEISMAN TOP 10 after Week 3">
+                      HEISMAN TOP 10 after Week 3
+                    </h3>
+                  <p>Harris Highlights</p>
+                  <p>3.4K views • 6 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/upCU-1uYwUA?si=ZP2MMaXRslVeKgRX"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/cascadeur-logo.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/upCU-1uYwUA?si=ZP2MMaXRslVeKgRX">
+                    <h3 class="iframes-header-middle-h3" title="Introducing Contact Animation for 2 and more Characters | Cascadeur 2024.2">
+                      Introducing Contact Animation for 2 and more Characters | Cascadeur 2024.2
+                    </h3>
+                  <p>Cascadeur</p>
+                  <p>3.7K views • 6 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/DYHvWmuc8MQ?si=pyISbvxl6SrCTGJp"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/full-time-filmmaker-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/DYHvWmuc8MQ?si=pyISbvxl6SrCTGJp">
+                    <h3 class="iframes-header-middle-h3" title="8 Steps To Making Better Content On A Cheap Camera ($200 Nikon)">
+                      8 Steps To Making Better Content On A Cheap Camera ($200 Nikon)
+                    </h3>
+                  <p>Full Time Filmmaker</p>
+                  <p>17K views • 1 day ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/bGO6AajK-Io?si=rMiTEVvjqCjxJMGq"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/scotty-kilmer-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/bGO6AajK-Io?si=rMiTEVvjqCjxJMGq">
+                    <h3 class="iframes-header-middle-h3" title="Stellantis Just Announced the End of Jeeps and Their Firing All Workers">
+                      Stellantis Just Announced the End of Jeeps and Their Firing All Workers
+                    </h3>
+                  <p>Scotty Kilmer</p>
+                  <p>19K views • 1 hour ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/UnjKWSlwZWM?si=2LpmyoZcZUeIC5ur"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/free-code-camp.png" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/UnjKWSlwZWM?si=2LpmyoZcZUeIC5ur">
+                    <h3 class="iframes-header-middle-h3" title="Music Production for Beginners – FL Studio Course [2024]">
+                      Music Production for Beginners – FL Studio Course [2024]
+                    </h3>
+                  <p>freeCodeCamp.org</p>
+                  <p>11K views • 6 hours ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+
+    <table class="video-table-margin-bottom">
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/FsT7jPoyt4s?si=LbzkFAQBEEGm5SmL"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/full-time-filmmaker-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/FsT7jPoyt4s?si=LbzkFAQBEEGm5SmL">
+                    <h3 class="iframes-header-middle-h3" title="Why Did DJI Make This?? (SDR)">
+                      Why Did DJI Make This?? (SDR)
+                    </h3>
+                  <p>Full Time Filmmaker</p>
+                  <p>46K views • 2 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/BVDlvdbFnIU?si=RF_QiWORCj-N106G"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/george-janko-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/BVDlvdbFnIU?si=RF_QiWORCj-N106G">
+                    <h3 class="iframes-header-middle-h3" title="Matt Walsh - Are You Racist? | EP. 85">
+                      Matt Walsh - Are You Racist? | EP. 85
+                    </h3>
+                  <p>George Janko</p>
+                  <p>165K views • 4 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/-rJWxiTAnhw?si=-E5iJgzR2nDNF7SN"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/reallusion-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/-rJWxiTAnhw?si=-E5iJgzR2nDNF7SN">
+                    <h3 class="iframes-header-middle-h3" title="Skateboard Mocap with Smart Accessory | Flatground Skate Tricks for iClone and ActorCore">
+                      Skateboard Mocap with Smart Accessory | Flatground Skate Tricks for iClone and ActorCore
+                    </h3>
+                  <p>Reallusion</p>
+                  <p>1.3K views • 2 weeks ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/sYCnsBE_Acc?si=KyoaErOt-oE8Y0Mt"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/harris-highlights.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/sYCnsBE_Acc?si=KyoaErOt-oE8Y0Mt">
+                    <h3 class="iframes-header-middle-h3" title="How the 12-team Playoff looks after WEEK 3">
+                      How the 12-team Playoff looks after WEEK 3
+                    </h3>
+                  <p>Harris Highlights</p>
+                  <p>3.4K views • 4 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/BsMK31XRz2s?si=fAsl_hIVbFgbt54P"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/cascadeur-logo.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/BsMK31XRz2s?si=fAsl_hIVbFgbt54P">
+                    <h3 class="iframes-header-middle-h3" title="Get Started in Cascadeur | Your First Animation Tutorial">
+                      Get Started in Cascadeur | Your First Animation Tutorial
+                    </h3>
+                  <p>Cascadeur</p>
+                  <p>80K views • 5 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+
+
+    <!-- SHORTS -->
+    <div class="shorts-header">
+      <div class="shorts-header-start">
+        <img src="../assets/youtube-shorts.png" alt="" style="height: 24px;">
+        <h2>Shorts</h2>
+      </div>
+      <div class="shorts-header-end">
+        <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+      </div>
+    </div>
+
+    <table class="video-table-margin-bottom">
+      <tr>
+        
+        <td class="shorts">
+          <div class="shorts-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/NxO83LI9MOc"
+              title="YouTube Shorts"
+              width="333"
+              height="578"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="margin-bottom: 5px;">
+            </iframe><br>
+
+            <div class="iframes-header">
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/NxO83LI9MOc">
+                  <h3 class="iframes-header-middle-h3" title="Testing complimentary colors!">
+                    Testing complimentary colors!
+                  </h3>
+                  <p>13K views</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="shorts">
+          <div class="shorts-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/ecKFDN2eSIM"
+              title="YouTube Shorts"
+              width="333"
+              height="578"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="margin-bottom: 5px;">
+            </iframe><br>
+
+            <div class="iframes-header">
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/ecKFDN2eSIM">
+                  <h3 class="iframes-header-middle-h3" title="Stop Buying These Car Parts">
+                    Stop Buying These Car Parts
+                  </h3>
+                  <p>27.5K views</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="shorts">
+          <div class="shorts-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/iU_PTA56Dr4"
+              title="YouTube Shorts"
+              width="333"
+              height="578"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="margin-bottom: 5px;">
+            </iframe><br>
+
+            <div class="iframes-header">
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/iU_PTA56Dr4">
+                  <h3 class="iframes-header-middle-h3" title="Cascadeur Mobile Preview #3d #animation #ios #gamedev">
+                    Cascadeur Mobile Preview #3d #animation #ios #gamedev
+                  </h3>
+                  <p>7.5K views</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="shorts">
+          <div class="shorts-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/8Me8uDqbufM"
+              title="YouTube Shorts"
+              width="333"
+              height="578"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="margin-bottom: 5px;">
+            </iframe><br>
+
+            <div class="iframes-header">
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/8Me8uDqbufM">
+                  <h3 class="iframes-header-middle-h3" title="Matt Walsh on Being Confronted in Public about his Ideology">
+                  Matt Walsh on Being Confronted in Public about his Ideology
+                </h3>
+                  <p>33.8K views</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="shorts">
+          <div class="shorts-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/DZWNMjhj-VY"
+              title="YouTube Shorts"
+              width="333"
+              height="578"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="margin-bottom: 5px;">
+            </iframe><br>
+
+            <div class="iframes-header">
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/DZWNMjhj-VY">
+                  <h3 class="iframes-header-middle-h3" title="Waving Penguin in HTML and CSS">Waving Penguin in HTML and CSS</h3>
+                  <p>14.6K views</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="shorts">
+          <div class="shorts-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/vADTpPS6gLc"
+              title="YouTube Shorts"
+              width="333"
+              height="578"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="margin-bottom: 5px;">
+            </iframe><br>
+
+            <div class="iframes-header">
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/vADTpPS6gLc">
+                  <h3 class="iframes-header-middle-h3" title="How to Animate a Double Handed Sword in Cascadeur ⚔️ #3danimation #gamedev #tutorial">
+                    How to Animate a Double Handed Sword in Cascadeur ⚔️ #3danimation #gamedev #tutorial
+                  </h3>
+                  <p>7.3K views</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="shorts">
+          <div class="shorts-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/ba8hfvcL850"
+              title="YouTube Shorts"
+              width="333"
+              height="578"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="margin-bottom: 5px;">
+            </iframe><br>
+
+            <div class="iframes-header">
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/ba8hfvcL850">
+                  <h3 class="iframes-header-middle-h3" title="pose a ZBrush character using Character Creator">
+                    pose a ZBrush character using Character Creator
+                  </h3>
+                  <p>1.2K views</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+    <br><br>
+
+
+    <!-- HORIZONTAL VIDEO -->
+    <table class="video-table-margin-top video-table-margin-bottom">
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/GFO_txvwK_c?si=V9czEdUIiYbSvgGY"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/free-code-camp.png" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/GFO_txvwK_c?si=V9czEdUIiYbSvgGY">
+                    <h3 class="iframes-header-middle-h3" title="JavaScript Game Development Course for Beginners">
+                      JavaScript Game Development Course for Beginners
+                    </h3>
+                  <p>freeCodeCamp.org</p>
+                  <p>1.1M views • 2 years ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/BqdM6rqjv0Y"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/scotty-kilmer-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/BqdM6rqjv0Y">
+                    <h3 class="iframes-header-middle-h3" title="I Never Thought I’d Live to See the End of Honda">
+                      I Never Thought I’d Live to See the End of Honda
+                    </h3>
+                  <p>Scotty Kilmer</p>
+                  <p>8.9K views • 1 hour ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/G1FrBC8V870"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/reallusion-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/G1FrBC8V870">
+                    <h3 class="iframes-header-middle-h3" title="How to Apply Accessories to the Crowd | iClone 8 Tutorial">
+                      How to Apply Accessories to the Crowd | iClone 8 Tutorial
+                    </h3>
+                  <p>Reallusion</p>
+                  <p>442 views • 22 hours ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/NyE5Z8BF-9g"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/harris-highlights.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/NyE5Z8BF-9g">
+                    <h3 class="iframes-header-middle-h3" title="11 teams ELIMINATED from Playoff Contention after Week 2">
+                      11 teams ELIMINATED from Playoff Contention after Week 2
+                    </h3>
+                  <p>Harris Highlights</p>
+                  <p>3.7K views • 3 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/pFt8vRKbXmY"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/cascadeur-logo.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/pFt8vRKbXmY">
+                    <h3 class="iframes-header-middle-h3" title="Cascadeur 2024.2 Feature Highlights">
+                      Cascadeur 2024.2 Feature Highlights
+                    </h3>
+                  <p>Cascadeur</p>
+                  <p>5.5K views • 1 day ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+
+    <table class="video-table-margin-bottom">
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/6lHf2c2_BkU"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/full-time-filmmaker-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/6lHf2c2_BkU">
+                    <h3 class="iframes-header-middle-h3" title="How to Shoot Cinematic Golf Content | Videographer Job Shadow">
+                      How to Shoot Cinematic Golf Content | Videographer Job Shadow
+                    </h3>
+                  <p>Full Time Filmmaker</p>
+                  <p>158K views • 8 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/DND5JF9ioRw"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/george-janko-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/DND5JF9ioRw">
+                    <h3 class="iframes-header-middle-h3" title="Johnny Chang - Ex Gang Member Confronted By God | EP. 84">
+                      Johnny Chang - Ex Gang Member Confronted By God | EP. 84
+                    </h3>
+                  <p>George Janko</p>
+                  <p>104K views • 1 day ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/lb1rLu0bYL0"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/free-code-camp.png" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/lb1rLu0bYL0">
+                    <h3 class="iframes-header-middle-h3" title="Lessons from Freelancing for Dozens of Startups with Eddie Jaoude [Podcast #141]">
+                      Lessons from Freelancing for Dozens of Startups with Eddie Jaoude [Podcast #141]
+                    </h3>
+                  <p>freeCodeCamp.org</p>
+                  <p>7.7K views • 11 hours ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/ijqjqwiNdV4"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/cascadeur-logo.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/ijqjqwiNdV4">
+                    <h3 class="iframes-header-middle-h3" title="Cascadeur Animation Reel">
+                      Cascadeur Animation Reel
+                    </h3>
+                  <p>Cascadeur</p>
+                  <p>128K views • 11 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/vl2dC0M0bHo"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/scotty-kilmer-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/vl2dC0M0bHo">
+                    <h3 class="iframes-header-middle-h3" title="I’m Standing in Front of the Worst Vehicle to Buy">
+                      I’m Standing in Front of the Worst Vehicle to Buy
+                    </h3>
+                  <p>Scotty Kilmer</p>
+                  <p>65K views • 4 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+    
+    <!-- HORIZONTAL VIDEO -->
+    <table class="video-table-margin-top video-table-margin-bottom">
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/To1pbtRaFsM"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/scotty-kilmer-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/To1pbtRaFsM">
+                    <h3 class="iframes-header-middle-h3" title="3 Things That Will Make Your Engine Last 500,000 Miles">
+                      3 Things That Will Make Your Engine Last 500,000 Miles
+                    </h3>
+                  <p>Scotty Kilmer</p>
+                  <p>109K views • 5 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/jgbYRsI2194"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/full-time-filmmaker-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/jgbYRsI2194">
+                    <h3 class="iframes-header-middle-h3" title="How We Shot a Cinematic Travel Video With Only an iPhone Ft. Lexar SL500 Portable SSD">
+                      How We Shot a Cinematic Travel Video With Only an iPhone Ft. Lexar SL500 Portable SSD
+                    </h3>
+                  <p>Full Time Filmmaker</p>
+                  <p>22K views • 2 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/NI9noEPboNI"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/reallusion-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/NI9noEPboNI">
+                    <h3 class="iframes-header-middle-h3" title="Streamline Your 3D Character Workflow | Download CC Character Base For Free Now">
+                      Streamline Your 3D Character Workflow | Download CC Character Base For Free Now
+                    </h3>
+                  <p>Reallusion</p>
+                  <p>195K views • 5 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/Y9vCcCHB3h4"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/harris-highlights.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/Y9vCcCHB3h4">
+                    <h3 class="iframes-header-middle-h3" title="How the 12-team Playoff CURRENTLY LOOKS 👀">
+                      How the 12-team Playoff CURRENTLY LOOKS 👀
+                    </h3>
+                  <p>Harris Highlights</p>
+                  <p>2.2K views • 2 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/gGUlM5JUOPc"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/cascadeur-logo.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/gGUlM5JUOPc">
+                    <h3 class="iframes-header-middle-h3" title="Autophysics Pipeline Tutorial | How to Make a Jump Kick in Cascadeur">
+                      Autophysics Pipeline Tutorial | How to Make a Jump Kick in Cascadeur
+                    </h3>
+                  <p>Cascadeur</p>
+                  <p>129K views • 1 year ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+
+    <table class="video-table-margin-bottom">
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/0jyqCUT5KB0?si=MWJucMHNaL-Fbyz7"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/full-time-filmmaker-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/0jyqCUT5KB0?si=MWJucMHNaL-Fbyz7">
+                    <h3 class="iframes-header-middle-h3" title="How to Film Yourself Cinematically">
+                      How to Film Yourself Cinematically
+                    </h3>
+                  <p>Full Time Filmmaker</p>
+                  <p>138K views • 5 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/QU2NmZjCneA?si=AaTyvbfOxMcgJ2oq"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/george-janko-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/QU2NmZjCneA?si=AaTyvbfOxMcgJ2oq">
+                    <h3 class="iframes-header-middle-h3" title="David Henrie - The Truth About Disney Channel | EP. 83">
+                      David Henrie - The Truth About Disney Channel | EP. 83
+                    </h3>
+                  <p>George Janko</p>
+                  <p>122K views • 5 days ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/G-XrFfiZlA0?si=yO9cuYzH1cElaB8k"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/reallusion-profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/G-XrFfiZlA0?si=yO9cuYzH1cElaB8k">
+                    <h3 class="iframes-header-middle-h3" title="Why do we need free CC character bases? How to use them? Pavmike tutorial - CC Character Base">
+                      Why do we need free CC character bases? How to use them? Pavmike tutorial - CC Character Base
+                    </h3>
+                  <p>Reallusion</p>
+                  <p>10K views • 4 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/JgTDd_fgV0A?si=XmuPiTkc7W6Mvmnz"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/harris-highlights.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/JgTDd_fgV0A?si=XmuPiTkc7W6Mvmnz">
+                    <h3 class="iframes-header-middle-h3" title="He was offered a scholarship in the 8TH GRADE! What happened to Tate Martell?">
+                      He was offered a scholarship in the 8TH GRADE! What happened to Tate Martell?
+                    </h3>
+                  <p>Harris Highlights</p>
+                  <p>657K views • 4 years ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/yMgPmMdgsWw?si=lG_u15YHSowepvsH"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/cascadeur-logo.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/yMgPmMdgsWw?si=lG_u15YHSowepvsH">
+                    <h3 class="iframes-header-middle-h3" title="Create a Custom Rig for a Cartoon Character in Cascadeur">
+                      Create a Custom Rig for a Cartoon Character in Cascadeur
+                    </h3>
+                  <p>Cascadeur</p>
+                  <p>7.2K views • 1 month ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+  </main>
+
+  <script src="../code/mytube.js"></script>
+</body>
+</html>

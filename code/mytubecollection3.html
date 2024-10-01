@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../code/css/mytube-defaults.css">
+    <link rel="stylesheet" href="../code/css/mytubeHome.css">
+    <link rel="stylesheet" href="../code/css/mytube-responsive.css">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d6f8c4c80.js" crossorigin="anonymous"></script>
+      <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../assets/youtube (1).png">
+    <title>3D animators/VFX artists - MyTube</title>
+</head>
+<!--New Movie Releases-->
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+
+    <div class="nav-wrapper">
+      <div class="nav-left">
+        <div class="toggle_btn">
+          <!-- <i class="fa-solid fa-bars" style="padding: 8px; color: var(--yt-black);"></i> -->
+          <img class="menu-bars" src="../assets/hamburger.png" style="height: 19px;" alt="">
+        </div>
+        <a href="mytubeHome.html">
+          <img title="MyTube Home" src="../assets/mytube design.png" alt="mytube" style="padding: 0 14px 0 16px;">
+        </a>
+      </div>
+
+      <div class="nav-middle">
+        <div class="search-bar">
+          <label for="search" style="display: none;"></label>
+          <input type="text" placeholder="Search" autocomplete="on" name="search-bar" id="search">
+          <img src="../assets/magnifying-glass.png" style="height: 22px;" title="Search" alt="magnifying glass">
+        </div>
+        <i title="Search with your voice" class="fa-solid fa-microphone"></i>
+      </div>
+
+      <div class="nav-right">
+        <!-- <i title="Login" class="fa-solid fa-film fa-lg" style="color: var(--yt-black);"></i> -->
+
+        <div class="nav-right-icon">
+          <a href="./mytubeNewVideo.html"><img src="../assets/add-video.png" alt="" style="height: 24px;" title="Create"></a>
+        </div>
+        <div class="nav-right-icon">
+          <img src="../assets/bell.png" alt="" style="height: 24px;" title="Notifications">
+        </div>
+        <div class="nav-right-icon">
+          <img src="../assets/zion-profile-pic.jpg" class="toggle_btn" alt="">
+        </div>
+      </div>
+
+      <!-- <div class="search-bar2">
+        <label for="search" style="display: none;"></label>
+        <input type="text" placeholder="Search" autocomplete="on" name="search-bar" id="search">
+        <img src="../assets/magnifying-glass.png" style="height: 22px;" title="Search" alt="magnifying glass">
+      </div> -->
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-icon" title="Home">
+        <a href=""><img src="../assets/home (2).png" alt="" style="height: 19px;"></a>
+        <p>Home</p>
+      </div>
+      <div class="sidebar-icon" title="Shorts">
+        <a href=""><img src="../assets/multimedia.png" alt="" style="height: 21px;"></a>
+        <p>Shorts</p>
+      </div>
+      <div class="sidebar-icon" title="Subscriptions">
+        <a href="./subscriptions-page.html"><img src="../assets/playlist (1).png" alt="" style="height: 19px; width: 22px;"></a>
+        <p>Subscriptions</p>
+      </div>
+      <div class="sidebar-icon" title="You">
+        <a href=""><img src="../assets/video-library.png" alt="" style="height: 22px;"></a>
+        <p>You</p>
+      </div>
+    </div>
+
+    <!-- DROPDOWN MENU -->
+    <div class="dropdown_menu open">
+    <div class="dropdown-bg"></div>
+    <div class="dropdown-section">
+
+        <!-- TOP -->
+        <div>
+          <li>
+            <img src="../assets/home (2).png" style="height: 19px; margin-right: 2px;" alt="">
+            <a href="./mytubeHome.html" title="Home">Home</a>
+          </li>
+          <li>
+            <img src="../assets/multimedia.png" style="height: 21px; margin-right: 1px;" alt="">
+            <a href="" title="Shorts">Shorts</a>
+          </li>
+          <li>
+            <img src="../assets/playlist (1).png" style="height: 19px; width: 22px;" alt="">
+            <a href="./subscriptions-page.html" title="Subscriptions">Subscriptions</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- YOU -->
+        <div class="dropdown-header">
+          <h2>You</h2>
+          <img src="../assets/chevron.png" style="width: 16px;" alt="">
+        </div>
+        <div>
+          <li>
+            <img src="../assets/television.png" style="height: 22px;" alt="">
+            <a href="./mytubeHome.html">Your channel</a>
+          </li>
+          <li>
+            <img src="../assets/history.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection1.html">History</a>
+          </li>
+          <li>
+            <img src="../assets/play-list.png" style="height: 22px;" alt="">
+            <a href="./playlist-page.html">Playlists</a>
+          </li>
+          <li>
+            <img src="../assets/play.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Your videos</a>
+          </li>
+          <li>
+            <img src="../assets/clock.png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Watch later</a>
+          </li>
+          <li>
+            <img src="../assets/like (1).png" style="height: 22px;" alt="">
+            <a href="./mytubecollection2.html">Liked videos</a>
+          </li>
+        </div>
+      
+        <hr>
+        
+        <!-- SUBSCRIPTIONS -->
+        <h2 class="dropdown-header-2">Subscriptions</h2>
+        <div>
+          <li>
+            <img src="../assets/free-code-camp.png" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@freecodecamp" target="_blank">freeCodeCamp.org</a>
+            <img class="push-right" src="../assets/live (1).png" style="width: 14px;" alt="">
+          </li>
+          <li>
+            <img src="../assets/full-time-filmmaker-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@fulltimefilmmaker" target="_blank">Full Time Filmmaker</a>
+            <img class="push-right" src="../assets/live (1).png" style="width: 14px;" alt="">
+          </li>
+          <li>
+            <img src="../assets/cascadeur-logo.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@Cascadeur" target="_blank">Cascadeur</a>
+            <img class="push-right" src="../assets/live (1).png" style="width: 14px;" alt="">
+          </li>
+          <li>
+            <img src="../assets/george-janko-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@GeorgeJanko" target="_blank">George Janko</a>
+            <div class="live-dot"></div>
+          </li>
+          <li>
+            <img src="../assets/scotty-kilmer-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@scottykilmer" target="_blank">Scotty Kilmer</a>
+            <div class="live-dot"></div>
+          </li>
+          <li>
+            <img src="../assets/reallusion-profile.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@reallusion" target="_blank">Reallusion</a>
+            <div class="live-dot"></div>
+          </li>
+          <li>
+            <img src="../assets/harris-highlights.jpg" style="height: 22px; border-radius: 50%;" alt="">
+            <a href="https://www.youtube.com/@HarrisHighlights" target="_blank">Harris Highlights</a>
+            <div class="live-dot"></div>
+          </li>
+        </div>
+        
+        <hr>
+
+        <!-- EXPLORE -->
+        <h2 class="dropdown-header-2">Explore</h2>
+        <div>
+          <li>
+            <img src="../assets/danger.png" style="height: 22px;" alt="">
+            <a href="">Trending</a>
+          </li>
+          <li>
+            <img src="../assets/bag.png" style="height: 22px;" alt="">
+            <a href="">Shopping</a>
+          </li>
+          <li>
+            <img src="../assets/music.png" style="height: 22px;" alt="">
+            <a href="">Music</a>
+          </li>
+          <li>
+            <img src="../assets/cinema.png" style="height: 22px;" alt="">
+            <a href="">Movies & TV</a>
+          </li>
+          <li>
+            <img src="../assets/live.png" style="height: 22px;" alt="">
+            <a href="">Live</a>
+          </li>
+          <li>
+            <img src="../assets/joystick.png" style="height: 22px;" alt="">
+            <a href="">Gaming</a>
+          </li>
+          <li>
+            <img src="../assets/newspaper.png" style="height: 22px;" alt="">
+            <a href="">News</a>
+          </li>
+          <li>
+            <img src="../assets/trophy.png" style="height: 22px;" alt="">
+            <a href="">Sports</a>
+          </li>
+          <li>
+            <img src="../assets/light-bulb.png" style="height: 22px;" alt="">
+            <a href="">Courses</a>
+          </li>
+          <li>
+            <img src="../assets/scarf.png" style="height: 22px;" alt="">
+            <a href="">Fashion & Beauty</a>
+          </li>
+          <li>
+            <img src="../assets/signal.png" style="height: 22px;" alt="">
+            <a href="">Podcasts</a>
+          </li>
+          <li>
+            <img src="../assets/handheld-console.png" style="height: 25px;" alt="">
+            <a href="">Playables</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- MORE FROM MYTUBE -->
+        <h2 class="dropdown-header-2">More from MyTube</h2>
+        <div>
+          <li>
+            <img src="../assets/youtube (1).png" style="height: 22px;" alt="">
+            <a href="">MyTube Premium</a>
+          </li>
+          <li>
+            <img src="../assets/social.png" style="height: 22px;" alt="">
+            <a href="">MyTube Studio</a>
+          </li>
+          <li>
+            <img src="../assets/youtube (2).png" style="height: 22px;" alt="">
+            <a href="">MyTube TV</a>
+          </li>
+          <li>
+            <img src="../assets/music (1).png" style="height: 22px;" alt="">
+            <a href="">MyTube Music</a>
+          </li>
+          <li>
+            <img src="../assets/youtube-kids.png" style="height: 22px;" alt="">
+            <a href="">MyTube Kids</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- SETTINGS -->
+        <div>
+          <li>
+            <img src="../assets/setting.png" style="height: 22px;" alt="">
+            <a href="">Settings</a>
+          </li>
+          <li>
+            <img src="../assets/flag.png" style="height: 22px;" alt="">
+            <a href="">Report History</a>
+          </li>
+          <li>
+            <img src="../assets/question.png" style="height: 22px;" alt="">
+            <a href="">Help</a>
+          </li>
+          <li>
+            <img src="../assets/chat-bubble.png" style="height: 22px;" alt="">
+            <a href="">Send feedback</a>
+          </li>
+        </div>
+
+        <hr>
+
+        <!-- FOOTER -->
+        <footer>
+          <div class="dropdown-footer-top">
+            <a target="_blank" href="https://about.youtube/" style="margin-right: 7px;">About</a>
+            <a target="_blank" href="https://blog.youtube/" style="margin-right: 7px;">Press</a>
+            <a target="_blank" href="https://www.youtube.com/howyoutubeworks/policies/copyright/" style="margin-right: 7px;">Copyright</a>
+            <a target="_blank" href="https://www.youtube.com/t/contact_us/" style="margin-right: 7px;">Contact us</a>
+            <a target="_blank" href="https://www.youtube.com/creators/" style="margin-right: 5px;">Creators</a>
+            <a target="_blank" href="https://www.youtube.com/ads/" style="margin-right: 7px;">Advertise</a>
+            <a target="_blank" href="https://developers.google.com/youtube" style="margin-right: 7px;">Developers</a>
+          </div>
+          <div class="dropdown-footer-top">
+            <a target="_blank" href="https://www.youtube.com/t/terms">Terms</a>
+            <a target="_blank" href="https://policies.google.com/privacy?hl=en">Privacy</a>
+            <a target="_blank" href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/">Policy & Safety</a>
+            <a target="_blank" href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen">How MyTube works</a>
+            <a target="_blank" href="https://www.youtube.com/new">Test new features</a>
+            <a target="_blank" href="https://tv.youtube.com/learn/nflsundayticket/">NFL Sunday Ticket</a>
+          </div>
+          <div class="dropdown-footer-bottom">
+            <p>© 2024 Google LLC</p>
+          </div>
+        </footer>
+    
+    </div>
+
+  </nav>
+
+  <!-- MENU BAR -->
+  <div class="menu-slider container">
+    <div class="icon">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+    </div>
+
+    <ul class="tabs-box">
+        <li class="tab" title="All">
+            <a href="../code/mytubeHome.html">All</a>
+        </li>
+        <li class="tab" title="New movie releases">
+            <a href="../code/mytubecollection1.html">New movie releases</a>
+        </li>
+        <li class="tab" title="Anime">
+            <a href="../code/mytubecollection2.html">Anime</a>
+        </li>
+        <li class="tab" title="3D animators/VFX artists">
+            <a href="../code/mytubecollection3.html">3D animators/VFX artists</a>
+        </li>
+        <li class="tab" title="Podcasts">
+            <a href="#">Podcasts</a>
+        </li>
+        <li class="tab" title="Cars">
+            <a href="#">Cars</a>
+        </li>
+        <li class="tab" title="Politics">
+            <a href="#">Politics</a>
+        </li>
+        <li class="tab" title="E news">
+            <a href="#">E news</a>
+        </li>
+        <li class="tab" title="NASCAR">
+            <a href="#">NASCAR</a>
+        </li>
+        <li class="tab" title="Sports">
+            <a href="#">Sports</a>
+        </li>
+        <li class="tab" title="Music">
+            <a href="#">Music</a>
+        </li>
+        <li class="tab" title="MMA">
+            <a href="#">MMA</a>
+        </li>
+        <li class="tab" title="NFL">
+            <a href="#">NFL</a>
+        </li>
+        <li class="tab" title="NBA">
+            <a href="#">NBA</a>
+        </li>
+        <li class="tab" title="NCAA">
+            <a href="#">NCAA</a>
+        </li>
+        <li class="tab" title="Track & Field">
+            <a href="#">Track & Field</a>
+        </li>
+        <li class="tab" title="MLB">
+            <a href="#">MLB</a>
+        </li>
+        <li class="tab" title="Mixes">
+            <a href="#">Mixes</a>
+        </li>
+        <li class="tab" title="HTML5">
+            <a href="#">HTML5</a>
+        </li>
+        <li class="tab" title="Cameras">
+            <a href="#">Cameras</a>
+        </li>
+        <li class="tab" title="Thrillers">
+            <a href="#">Thrillers</a>
+        </li>
+        <li class="tab" title="Javascript">
+            <a href="#">JavaScript</a>
+        </li>
+        <li class="tab" title="Live">
+            <a href="#">Live</a>
+        </li>
+        <li class="tab" title="Recently uploaded">
+            <a href="#">Recently uploaded</a>
+        </li>
+        <li class="tab" title="Watched">
+            <a href="#">Watched</a>
+        </li>
+        <li class="tab" title="New to you">
+            <a href="#">New to you</a>
+        </li>
+        <li class="tab" title="Get started">
+            <a href="../code/mytubeNewVideo.html">Get started</a>
+        </li>
+    </ul>
+
+    <div class="icon">
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- HORIZONTAL VIDEO -->
+    <h2 class="playlist-header">3D animators/VFX artists</h2>
+
+    <table class="video-table-margin-bottom">
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/rHCwip597_0?si=1uJGNVnOFR7uT4J_"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/diego-woods_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/rHCwip597_0?si=1uJGNVnOFR7uT4J_">
+                    <h3 class="iframes-header-middle-h3" title="I Made Kakashi Hatake In Live Action">
+                      I Made Kakashi Hatake In Live Action
+                    </h3>
+                  <p>Diego Woods</p>
+                  <p>91K views • 1 year ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/mT5XcU4y-P0?si=n65UTZe65FMZ11-M"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/diego-woods_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/mT5XcU4y-P0?si=n65UTZe65FMZ11-M">
+                    <h3 class="iframes-header-middle-h3" title="How I Turned Into Sasuke Uchiha">
+                      How I Turned Into Sasuke Uchiha
+                    </h3>
+                  <p>Diego Woods</p>
+                  <p>767K views • 2 years ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/8UqaI33iwfU?si=vugvCXf2QYEcY-oM"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/jalex-rosa_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/8UqaI33iwfU?si=vugvCXf2QYEcY-oM">
+                    <h3 class="iframes-header-middle-h3" title="How I Transformed Myself Into Obito Using VFX">
+                      How I Transformed Myself Into Obito Using VFX!
+                    </h3>
+                  <p>Jalex Rosa</p>
+                  <p>5.2M views • 3 years ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/kn8eMXdiu0Q?si=k1riAQ3iw1UP9Qx4"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/jalex-rosa_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/kn8eMXdiu0Q?si=k1riAQ3iw1UP9Qx4">
+                    <h3 class="iframes-header-middle-h3" title="How I Transformed Myself Into Sasuke from Naruto using VFX!">
+                      How I Transformed Myself Into Sasuke from Naruto using VFX!
+                    </h3>
+                  <p>Jalex Rosa</p>
+                  <p>4.2M views • 2 years ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/yAN1IznM-rk?si=zOn2GbU-GXrhe-oT"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/diego-woods_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/yAN1IznM-rk?si=zOn2GbU-GXrhe-oT">
+                    <h3 class="iframes-header-middle-h3" title="How I Made Inumaki In Live Action">
+                      How I Made Inumaki In Live Action
+                    </h3>
+                  <p>Diego Woods</p>
+                  <p>659K views • 2 years ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+
+    <table class="video-table-margin-bottom">
+      <tr class="iframes">
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/DXvnGDnQYyg?si=cQRvmllZw88UsCyS"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/jalex-rosa_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/DXvnGDnQYyg?si=cQRvmllZw88UsCyS">
+                    <h3 class="iframes-header-middle-h3" title="I Transformed Myself Into Raiden Using VFX">
+                      I Transformed Myself Into Raiden Using VFX
+                    </h3>
+                  <p>Jalex Rosa</p>
+                  <p>1.8M views • 1 year ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/UXqq0ZvbOnk?si=5JxM23CvSQDfdwbQ"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/blender_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/UXqq0ZvbOnk?si=5JxM23CvSQDfdwbQ">
+                    <h3 class="iframes-header-middle-h3" title="CHARGE - Blender Open Movie">
+                      CHARGE - Blender Open Movie
+                    </h3>
+                  <p>Blender Studio</p>
+                  <p>2.1M views • 1 year ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/wgiRK8_iKdg?si=oSNLsKd7yIMOCGYv"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/pwnisher_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/wgiRK8_iKdg?si=oSNLsKd7yIMOCGYv">
+                    <h3 class="iframes-header-middle-h3" title="Top 100 Boss Fight 3D Montage (ft. Disasterpeace)">
+                      Top 100 Boss Fight 3D Montage (ft. Disasterpeace)
+                    </h3>
+                  <p>pwnisher</p>
+                  <p>3.2M views • 1 year ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/9jH0wDp5GnQ?si=2wJF8TXYeazFmscG"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/No The Robot_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/9jH0wDp5GnQ?si=2wJF8TXYeazFmscG">
+                    <h3 class="iframes-header-middle-h3" title="How Spider-Verse Broke The Rules of 3D Animation">
+                      How Spider-Verse Broke The Rules of 3D Animation
+                    </h3>
+                  <p>No The Robot</p>
+                  <p>1.2M views • 1 year ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+        <td class="horizontal-video">
+          <div class="horizontal-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/NjahiPD445k?si=KkGlDPGyt0K81zST"
+              title="YouTube video player"
+              width="531"
+              height="298"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe><br>
+            
+            <div class="iframes-header">
+              <div class="iframes-header-left">
+                <img src="../assets/xieboli_profile.jpg" style="height: 36px; border-radius: 50%; margin-right: 15px;" alt="">
+              </div>
+
+              <div class="iframes-header-middle">
+                <a href="https://www.youtube.com/embed/NjahiPD445k?si=KkGlDPGyt0K81zST">
+                    <h3 class="iframes-header-middle-h3" title="It Took Me 1.5 Years to Make This Attack on Titan short film">
+                      It Took Me 1.5 Years to Make This Attack on Titan short film
+                    </h3>
+                  <p>xieboli</p>
+                  <p>6.1M views • 3 months ago</p>
+                </a>
+              </div>
+
+              <div class="iframes-header-playlist-right">
+                <img src="../assets/menu-dots-vertical.png" alt="" style="height: 24px; cursor: pointer;">
+              </div>
+            </div>
+
+          </div>
+        </td>
+
+      </tr>
+    </table>
+
+  </main>
+
+  <script src="../code/mytube.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+:root {
+  --yt-btn-light: rgb(242, 242, 242);
+  --yt-btn-light-hover: rgb(215, 215, 215);
+  --yt-black: #0f0f0f;
+  --off-black: rgb(41, 41, 41);
+  --gray: rgb(69, 69, 69);
+  --light-black: rgb(95, 95, 95);
+  --light-grey: rgb(133, 133, 133);
+  --footer-link-grey: rgb(100, 100, 100);
+  --arrow-btn: rgba(218, 217, 217, .8);
+  --lighter-grey: rgba(234, 234, 234, 0.8);
+  --yt-red: #ff0000;
+  --link-btn-text: #065fd4;
+  --link-btn-bg: #def1ff;
+  --link-btn-bg-hover: rgba(136, 136, 156, 0.25);
+  --link-btn-bg-active: hsla(240, 9%, 53.3%, 0.4);
+  --link-btn-bg-active-cancel: #c7d5e2;
+
+  --ff-roboto-condensed: "Roboto Condensed", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
+
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  margin-right: 10px;
+  font-family: var(--ff-roboto);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--light-grey);
+}
+
+.dropdown-header {
+  color: var(--off-black);
+  font-size: 10px;
+  font-weight: 300;
+  padding:  0 12px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+} .dropdown-header h2 {
+  padding-right: 8px;
+}
+
+.dropdown-header-2 {
+  display: flex;
+  align-items: center;
+  color: var(--off-black);
+  font-size: 16px;
+  font-weight: 500;
+  padding:  6px 12px 4px;
+  height: 32px;
+  margin: 0;
+}
+
+hr {
+  width: 111%;
+  margin: 12px 0 12px -12px;
+  background-color: var(--arrow-btn);
+  border: none;
+  height: 1px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.iframes {
+  padding-top: -20px;
+}
+
+.iframes iframe {
+  /* padding: 5px; */
+  border-radius: 18px;
+}
+
+.iframes iframe:hover {
+  border-radius: 0px;
+  transition: ease .3s;
+}
+
+.iframes a {
+  color: var(--yt-black);
+} 
+
+.iframes a:hover {
+  color: var(--off-black);
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+.horizontal-video,
+.shorts {
+  padding: 0 7px 0 7px;
+}
+
+.video-table-margin-bottom {
+  margin-bottom: 50px;
+}
+
+.video-table-margin-top {
+  margin-top: 100px;
+}
+
+.playlist-header {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 10px 10px;
+  color: var(--yt-black);
+}

@@ -1,0 +1,108 @@
+/*FORM*/
+:root {
+  font-family: var(--ff-roboto);
+
+}
+label {
+  color: var(--off-black);
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 90px;
+}
+
+p {
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  justify-content: center;
+  border-style: none;
+  border: 1px solid var(--off-black);
+  border-radius: 5px;
+
+}
+
+.form-container {
+  padding: 30px;
+  width: 455px;
+  margin: 50px auto 0 auto;
+  justify-content: center;
+  border: 2px solid var(--lighter-grey);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px var(--lighter-grey);
+  /*horizontal|vertical|blur|spread*/
+}
+
+.form-container h1 {
+  font-size: 20px;
+  color: var(--off-black);
+}
+.input {
+  outline: none;
+  padding: 10px;
+  width: 97%;
+  height: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+  background-color: var(--lighter-grey);
+}
+
+.input::placeholder,  
+ textarea::placeholder {
+  font-size: 14px;
+  font-family: var(--ff-roboto--ff-roboto);
+}
+
+textarea {
+  border-style: none;
+  width: 97%;
+  background-color: var(--lighter-grey); 
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.submit-container {
+  display: flex;
+}
+
+.cancel {
+  padding: 12px;
+  margin: 0 5px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--link-btn-bg-hover);
+  color: var(--link-btn-text);
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.submit {
+  padding: 12px;
+  margin: 0 5px;
+  width: 100%;
+  background-color: var(--link-btn-bg);
+  border: 0;
+  color: var(--link-btn-text);
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background-color: var(--link-btn-bg);
+  border: 1px solid var(--link-btn-bg);
+}
+.submit:hover { background-color: var(--link-btn-bg-hover); }
+
+.cancel:active { 
+  background-color: var(--link-btn-bg-active-cancel); 
+  border: 1px solid var(--link-btn-bg-active-cancel);
+}
+.submit:active { background-color: var(--link-btn-bg-active); }
